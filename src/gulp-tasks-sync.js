@@ -13,7 +13,7 @@ export function syncTasks (gulp, opts) {
 
   gulp.task('syncPre', (callback) => runSequence('dist', callback));
 
-  gulp.task('sync', ['syncPre'], () => {
+  gulp.task('sync', () => {
     if (options.sync) {
       gulp.src(options.dist)
         .pipe(rsync({

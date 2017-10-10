@@ -37,7 +37,7 @@ export function distTasks (gulp, opts) {
     }
   });
 
-  gulp.task('dist', ['dist-preprocess'], (done) => {
+  gulp.task('dist', (done) => {
 
     let webpackConfigPath = path.resolve(
       __dirname, 'webpack.dist.config.js'

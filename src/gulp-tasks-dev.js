@@ -31,7 +31,7 @@ export function devTasks (gulp, opts) {
     }
   });
 
-  gulp.task('dev', ['dev-preprocess'], () => {
+  gulp.task('dev', () => {
 
     let webpackConfigPath = path.resolve(
       __dirname, 'webpack.dev.config.js'
